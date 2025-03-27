@@ -15,23 +15,33 @@ body {
   margin: 0; /* Removes default body margin */
 }
 
-    button {
-  width: 20vw; /* 20% of viewport width */
-  max-width: 300px; /* Prevents it from becoming too large */
-  height: 10vh; /* 10% of viewport height */
-  min-height: 50px; /* Ensures it's not too small */
-  font-size: 3vw; /* Responsive font size */
+button {
+  width: 20vw;
+  max-width: 300px;
+  height: 10vh;
+  min-height: 50px;
+  font-size: 3vw;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   background-color: white;
   border: none;
   border-radius: 20px;
-  transition: 0.3s; /* Smooth hover effect */
+  transition: 0.3s;
+  
+  display: flex; /* Ensures text stays centered */
+  align-items: center; /* Centers text vertically */
+  justify-content: center; /* Centers text horizontally */
+  padding: 0; /* Removes any default padding that might cause text cutoff */
+  overflow: hidden; /* Prevents text from overflowing */
+  white-space: nowrap; /* Ensures text stays in one line */
 }
 
 button:hover {
   cursor: pointer;
-  background-color: lightgray; /* Subtle hover effect */
+  background-color: lightgray;
+}
+a {
+  text-decoration: none; /* Removes the underline from the link */
 }
 
   </style>
